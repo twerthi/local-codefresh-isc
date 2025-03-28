@@ -1,0 +1,13 @@
+apiVersion: codefresh.io/v1beta2
+kind: Product
+metadata:
+  name: octopub
+spec:
+  promotionFlows:
+    - name: octopub-flow
+      gitTriggerSelectors:
+        - key: commitMessage
+          operator: In
+          values:
+            - local-test*
+  concurrency: queue
