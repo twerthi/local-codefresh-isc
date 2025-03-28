@@ -3,20 +3,20 @@ kind: Application
 metadata:
   name: octopub
   labels:
-    codefresh.io/entity: 'git-source'
+    codefresh.io/entity: git-source
     codefresh.io/internal: 'false'
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
   project: cf-git-sources
   sources:
-    - repoURL: https://github.com/twerthi/octopub.git
-      path: codefresh/local-contolplane/kustomize
-      targetRevision: main
-      directory:
-        include: '*'
-        exclude: ''
-        recurse: true
+  - repoURL: https://github.com/twerthi/octopub.git
+    path: codefresh/local-controlplane/kustomize
+    targetRevision: main
+    directory:
+      include: '*'
+      exclude: ''
+      recurse: true
   destination:
     namespace: codefresh-gitops-runtime
     server: https://kubernetes.default.svc
