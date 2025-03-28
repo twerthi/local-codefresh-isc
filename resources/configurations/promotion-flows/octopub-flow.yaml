@@ -1,0 +1,19 @@
+apiVersion: codefresh.io/v1beta1
+kind: PromotionFlow
+metadata:
+  name: octopub-flow
+  annotations:
+    description: ""
+spec:
+  triggerEnvironment: development
+  steps:
+    - environment: test
+      dependsOn:
+        - development
+      policy:
+        action: commit
+    - environment: production
+      dependsOn:
+        - test
+      policy:
+        action: commit
