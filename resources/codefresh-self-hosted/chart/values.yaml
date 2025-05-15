@@ -1,0 +1,171 @@
+gitops-runtime:
+  global:
+    codefresh:
+      accountId: 59009117c102763beda7ce71
+      apiEventsPath: /2.0/api/events
+      tls:
+        caCerts:
+          secret:
+            annotations: {}
+            content: |
+              -----BEGIN CERTIFICATE-----
+              MIIGPzCCBSegAwIBAgIQB2rBt1+YUiUtxCi2ipSxpjANBgkqhkiG9w0BAQsFADCB
+              jzELMAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4G
+              A1UEBxMHU2FsZm9yZDEYMBYGA1UEChMPU2VjdGlnbyBMaW1pdGVkMTcwNQYDVQQD
+              Ey5TZWN0aWdvIFJTQSBEb21haW4gVmFsaWRhdGlvbiBTZWN1cmUgU2VydmVyIENB
+              MB4XDTI1MDEwNjAwMDAwMFoXDTI2MDEzMDIzNTk1OVowHTEbMBkGA1UEAwwSKi5v
+              Y3RvcHVzZGVtb3MuYXBwMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA
+              kIQg9NItJONlzJVoxwhzaPAEzMtddui5yNkG/CacFAAPf72f1uwviMEdSj7B1YW3
+              koAiwC2bMsN2EDGnKFIZC2jrifIpedRoC/86/AgzJkn8nbZezctS/zLj8Ad8dHT6
+              ZnhE9Y3T3ztQ33U3+9eeNwslj75ToGcBB6EEwxDw+FcFS3uhm8eZRFG7Dpp0QTKr
+              0qlvD1K8IcpZSL7rVeRtQlZhRp76llnzP8v/++jwPtyHZpDSS5ay+P1rVmxrUyJR
+              XjLeJgkNlCeNPwhFCaMPMAWLLhf1nssbbBrCkuMxbM/zAyrtfwSbFH8ZhYxPDy3C
+              um+Os0egic4QRfxihOk+2wIDAQABo4IDBjCCAwIwHwYDVR0jBBgwFoAUjYxexFSt
+              iuF36Zv5mwXhuAGNYeEwHQYDVR0OBBYEFDwRF40aZWNlFQdwZTodt6Ffy6x+MA4G
+              A1UdDwEB/wQEAwIFoDAMBgNVHRMBAf8EAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMB
+              BggrBgEFBQcDAjBJBgNVHSAEQjBAMDQGCysGAQQBsjEBAgIHMCUwIwYIKwYBBQUH
+              AgEWF2h0dHBzOi8vc2VjdGlnby5jb20vQ1BTMAgGBmeBDAECATCBhAYIKwYBBQUH
+              AQEEeDB2ME8GCCsGAQUFBzAChkNodHRwOi8vY3J0LnNlY3RpZ28uY29tL1NlY3Rp
+              Z29SU0FEb21haW5WYWxpZGF0aW9uU2VjdXJlU2VydmVyQ0EuY3J0MCMGCCsGAQUF
+              BzABhhdodHRwOi8vb2NzcC5zZWN0aWdvLmNvbTAvBgNVHREEKDAmghIqLm9jdG9w
+              dXNkZW1vcy5hcHCCEG9jdG9wdXNkZW1vcy5hcHAwggF+BgorBgEEAdZ5AgQCBIIB
+              bgSCAWoBaAB3AJaXZL9VWJet90OHaDcIQnfp8DrV9qTzNm5GpD8PyqnGAAABlDpn
+              5pMAAAQDAEgwRgIhAIM2MJtarOLrMdm6wWO90DYHtThhspqF/m7sX3w1Nxy4AiEA
+              0KiShqo8rvjmEz4ilHX/5ZP/I602X5yKFqE2Memr10oAdQAZhtTHKKpv/roDb3gq
+              TQGRqs4tcjEPrs5dcEEtJUzH1AAAAZQ6Z+YxAAAEAwBGMEQCIGVrlQsEV8gTBEf1
+              po+hxx+ovPvE+sIFochxOW/5ftvfAiBynxVyzPllNteq9S9HfTo49jG0+waowOsq
+              RKeySjo9mAB2AMs49xWJfIShRF9bwd37yW7ymlnNRwppBYWwyxTDFFjnAAABlDpn
+              5mEAAAQDAEcwRQIgQAu1tJHOQWUz3n5weLM7YUFb3zjoLpf8biqe30DpINECIQD2
+              WeehDbSZcodky55EvBvrAFwLXJW/NKi2h+WnQWZdwDANBgkqhkiG9w0BAQsFAAOC
+              AQEAfldazRborJ5Fk570BdDQShw6sfko7600DrpL7HUoFw6rCLDPrDmgCy/7cP30
+              fS6tbqLETDbTpFYySSz9OrEMhKqdeHS9CmbbKn5w/8yVnZSNUxYXvV5o8ti96k0k
+              zFF4VzbNepiSqe19Y7r2aOL/NhLwLoTpua4CzxVxFGM/0z6G8mlRzf63zPw8HCUX
+              oWodr5aSB8x1QUVfr9lSYYBpavzvmDc46lGBF+c1nXc0JrPZ+sFtDDNAGgkHBX4F
+              xoiAK11V8SdBUtwpO+l9XnpkuuxwoAyo9bEzFJfS/es9umDaUQsYSbXKzzRPq/6O
+              MfFILUSWwHX9wZ4fLfEu2nY73Q==
+              -----END CERTIFICATE-----
+
+              -----BEGIN CERTIFICATE-----
+              MIIGEzCCA/ugAwIBAgIQfVtRJrR2uhHbdBYLvFMNpzANBgkqhkiG9w0BAQwFADCB
+              iDELMAkGA1UEBhMCVVMxEzARBgNVBAgTCk5ldyBKZXJzZXkxFDASBgNVBAcTC0pl
+              cnNleSBDaXR5MR4wHAYDVQQKExVUaGUgVVNFUlRSVVNUIE5ldHdvcmsxLjAsBgNV
+              BAMTJVVTRVJUcnVzdCBSU0EgQ2VydGlmaWNhdGlvbiBBdXRob3JpdHkwHhcNMTgx
+              MTAyMDAwMDAwWhcNMzAxMjMxMjM1OTU5WjCBjzELMAkGA1UEBhMCR0IxGzAZBgNV
+              BAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4GA1UEBxMHU2FsZm9yZDEYMBYGA1UE
+              ChMPU2VjdGlnbyBMaW1pdGVkMTcwNQYDVQQDEy5TZWN0aWdvIFJTQSBEb21haW4g
+              VmFsaWRhdGlvbiBTZWN1cmUgU2VydmVyIENBMIIBIjANBgkqhkiG9w0BAQEFAAOC
+              AQ8AMIIBCgKCAQEA1nMz1tc8INAA0hdFuNY+B6I/x0HuMjDJsGz99J/LEpgPLT+N
+              TQEMgg8Xf2Iu6bhIefsWg06t1zIlk7cHv7lQP6lMw0Aq6Tn/2YHKHxYyQdqAJrkj
+              eocgHuP/IJo8lURvh3UGkEC0MpMWCRAIIz7S3YcPb11RFGoKacVPAXJpz9OTTG0E
+              oKMbgn6xmrntxZ7FN3ifmgg0+1YuWMQJDgZkW7w33PGfKGioVrCSo1yfu4iYCBsk
+              Haswha6vsC6eep3BwEIc4gLw6uBK0u+QDrTBQBbwb4VCSmT3pDCg/r8uoydajotY
+              uK3DGReEY+1vVv2Dy2A0xHS+5p3b4eTlygxfFQIDAQABo4IBbjCCAWowHwYDVR0j
+              BBgwFoAUU3m/WqorSs9UgOHYm8Cd8rIDZsswHQYDVR0OBBYEFI2MXsRUrYrhd+mb
+              +ZsF4bgBjWHhMA4GA1UdDwEB/wQEAwIBhjASBgNVHRMBAf8ECDAGAQH/AgEAMB0G
+              A1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAbBgNVHSAEFDASMAYGBFUdIAAw
+              CAYGZ4EMAQIBMFAGA1UdHwRJMEcwRaBDoEGGP2h0dHA6Ly9jcmwudXNlcnRydXN0
+              LmNvbS9VU0VSVHJ1c3RSU0FDZXJ0aWZpY2F0aW9uQXV0aG9yaXR5LmNybDB2Bggr
+              BgEFBQcBAQRqMGgwPwYIKwYBBQUHMAKGM2h0dHA6Ly9jcnQudXNlcnRydXN0LmNv
+              bS9VU0VSVHJ1c3RSU0FBZGRUcnVzdENBLmNydDAlBggrBgEFBQcwAYYZaHR0cDov
+              L29jc3AudXNlcnRydXN0LmNvbTANBgkqhkiG9w0BAQwFAAOCAgEAMr9hvQ5Iw0/H
+              ukdN+Jx4GQHcEx2Ab/zDcLRSmjEzmldS+zGea6TvVKqJjUAXaPgREHzSyrHxVYbH
+              7rM2kYb2OVG/Rr8PoLq0935JxCo2F57kaDl6r5ROVm+yezu/Coa9zcV3HAO4OLGi
+              H19+24rcRki2aArPsrW04jTkZ6k4Zgle0rj8nSg6F0AnwnJOKf0hPHzPE/uWLMUx
+              RP0T7dWbqWlod3zu4f+k+TY4CFM5ooQ0nBnzvg6s1SQ36yOoeNDT5++SR2RiOSLv
+              xvcRviKFxmZEJCaOEDKNyJOuB56DPi/Z+fVGjmO+wea03KbNIaiGCpXZLoUmGv38
+              sbZXQm2V0TP2ORQGgkE49Y9Y3IBbpNV9lXj9p5v//cWoaasm56ekBYdbqbe4oyAL
+              l6lFhd2zi+WJN44pDfwGF/Y4QA5C5BIG+3vzxhFoYt/jmPQT2BVPi7Fp2RBgvGQq
+              6jG35LWjOhSbJuMLe/0CjraZwTiXWTb2qHSihrZe68Zk6s+go/lunrotEbaGmAhY
+              LcmsJWTyXnW0OMGuf1pGg+pRyrbxmRE1a6Vqe8YAsOf4vmSyrcjC8azjUeqkk+B5
+              yOGBQMkKW+ESPMFgKuOXwIlCypTPRpgSabuY0MLTDXJLR27lk8QyKGOHQ+SwMj4K
+              00u/I5sUKUErmgQfky3xxzlIPK1aEn8=
+              -----END CERTIFICATE-----
+
+              -----BEGIN CERTIFICATE-----
+              MIIFgTCCBGmgAwIBAgIQOXJEOvkit1HX02wQ3TE1lTANBgkqhkiG9w0BAQwFADB7
+              MQswCQYDVQQGEwJHQjEbMBkGA1UECAwSR3JlYXRlciBNYW5jaGVzdGVyMRAwDgYD
+              VQQHDAdTYWxmb3JkMRowGAYDVQQKDBFDb21vZG8gQ0EgTGltaXRlZDEhMB8GA1UE
+              AwwYQUFBIENlcnRpZmljYXRlIFNlcnZpY2VzMB4XDTE5MDMxMjAwMDAwMFoXDTI4
+              MTIzMTIzNTk1OVowgYgxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpOZXcgSmVyc2V5
+              MRQwEgYDVQQHEwtKZXJzZXkgQ2l0eTEeMBwGA1UEChMVVGhlIFVTRVJUUlVTVCBO
+              ZXR3b3JrMS4wLAYDVQQDEyVVU0VSVHJ1c3QgUlNBIENlcnRpZmljYXRpb24gQXV0
+              aG9yaXR5MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAgBJlFzYOw9sI
+              s9CsVw127c0n00ytUINh4qogTQktZAnczomfzD2p7PbPwdzx07HWezcoEStH2jnG
+              vDoZtF+mvX2do2NCtnbyqTsrkfjib9DsFiCQCT7i6HTJGLSR1GJk23+jBvGIGGqQ
+              Ijy8/hPwhxR79uQfjtTkUcYRZ0YIUcuGFFQ/vDP+fmyc/xadGL1RjjWmp2bIcmfb
+              IWax1Jt4A8BQOujM8Ny8nkz+rwWWNR9XWrf/zvk9tyy29lTdyOcSOk2uTIq3XJq0
+              tyA9yn8iNK5+O2hmAUTnAU5GU5szYPeUvlM3kHND8zLDU+/bqv50TmnHa4xgk97E
+              xwzf4TKuzJM7UXiVZ4vuPVb+DNBpDxsP8yUmazNt925H+nND5X4OpWaxKXwyhGNV
+              icQNwZNUMBkTrNN9N6frXTpsNVzbQdcS2qlJC9/YgIoJk2KOtWbPJYjNhLixP6Q5
+              D9kCnusSTJV882sFqV4Wg8y4Z+LoE53MW4LTTLPtW//e5XOsIzstAL81VXQJSdhJ
+              WBp/kjbmUZIO8yZ9HE0XvMnsQybQv0FfQKlERPSZ51eHnlAfV1SoPv10Yy+xUGUJ
+              5lhCLkMaTLTwJUdZ+gQek9QmRkpQgbLevni3/GcV4clXhB4PY9bpYrrWX1Uu6lzG
+              KAgEJTm4Diup8kyXHAc/DVL17e8vgg8CAwEAAaOB8jCB7zAfBgNVHSMEGDAWgBSg
+              EQojPpbxB+zirynvgqV/0DCktDAdBgNVHQ4EFgQUU3m/WqorSs9UgOHYm8Cd8rID
+              ZsswDgYDVR0PAQH/BAQDAgGGMA8GA1UdEwEB/wQFMAMBAf8wEQYDVR0gBAowCDAG
+              BgRVHSAAMEMGA1UdHwQ8MDowOKA2oDSGMmh0dHA6Ly9jcmwuY29tb2RvY2EuY29t
+              L0FBQUNlcnRpZmljYXRlU2VydmljZXMuY3JsMDQGCCsGAQUFBwEBBCgwJjAkBggr
+              BgEFBQcwAYYYaHR0cDovL29jc3AuY29tb2RvY2EuY29tMA0GCSqGSIb3DQEBDAUA
+              A4IBAQAYh1HcdCE9nIrgJ7cz0C7M7PDmy14R3iJvm3WOnnL+5Nb+qh+cli3vA0p+
+              rvSNb3I8QzvAP+u431yqqcau8vzY7qN7Q/aGNnwU4M309z/+3ri0ivCRlv79Q2R+
+              /czSAaF9ffgZGclCKxO/WIu6pKJmBHaIkU4MiRTOok3JMrO66BQavHHxW/BBC5gA
+              CiIDEOUMsfnNkjcZ7Tvx5Dq2+UUTJnWvu6rvP3t3O9LEApE9GQDTF1w52z97GA1F
+              zZOFli9d31kWTz9RvdVFGD/tSo7oBmF0Ixa1DVBzJ0RHfxBdiSprhTEUxOipakyA
+              vGp4z7h/jnZymQyd/teRCBaho1+V
+              -----END CERTIFICATE-----
+            create: false
+            key: STAR_octopusdemos_app.key
+          secretKeyRef: {}
+        workflowPipelinesGitWebhooks:
+          annotatins: {}
+          certificates: {}
+      url: https://codefresh.octopusdemos.app
+      userToken:
+        secretKeyRef:
+          name: codefresh-user-token
+          key: token
+    runtime:
+      cluster: https://kubernetes.default.svc
+      codefreshHosted: false
+      eventBus:
+        annotations: {}
+        name: codefresh-eventbus
+        nats:
+          native:
+            auth: token
+            containerTemplate:
+              resources:
+                limits:
+                  cpu: 500m
+                  ephemeral-storage: 2Gi
+                  memory: 4Gi
+                requests:
+                  cpu: 200m
+                  ephemeral-storage: 2Gi
+                  memory: 1Gi
+            maxPayload: 4MB
+            replicas: 3
+        pdb:
+          enabled: true
+          minAvailable: 2
+      ingress:
+        annotations: {}
+        className: nginx-codefresh
+        enabled: true
+        hosts:
+          - codefresh-gitops-runtime.octopusdemos.app
+        protocol: https
+        skipValidation: true
+        tls:
+          - hosts:
+              - codefresh-gitops-runtime.octopusdemos.app
+            secretName: octopusdemos
+      ingressUrl: https://codefresh-gitops-runtime.octopusdemos.app
+      isConfigurationRuntime: true
+      name: codefresh-self-hosted
+  installer:
+    image:
+      pullPolicy: IfNotPresent
+      repository: quay.io/codefresh/gitops-runtime-installer
+      tag: ''
+    skipValidation: true

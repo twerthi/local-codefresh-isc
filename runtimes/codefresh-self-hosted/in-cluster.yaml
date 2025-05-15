@@ -15,7 +15,7 @@ spec:
   source:
     directory:
       include: >-
-        {all-runtimes-all-clusters/**/*.yaml,all-runtimes-all-clusters/*.yaml,configurations/**/*.yaml,control-planes/**/*.yaml,control-planes/*.yaml,runtimes/codefresh-self-hosted/**/*.yaml,runtimes/codefresh-self-hosted/*.yaml}
+        {all-runtimes-all-clusters/**/*.yaml,all-runtimes-all-clusters/*.yaml,codefresh-self-hosted/cf-gitops-runtime.yaml,configurations/**/*.yaml,control-planes/**/*.yaml,control-planes/*.yaml,runtimes/codefresh-self-hosted/**/*.yaml,runtimes/codefresh-self-hosted/*.yaml}
       recurse: true
     path: resources
     repoURL: https://github.com/twerthi/local-codefresh-isc.git
